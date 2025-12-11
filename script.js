@@ -17,6 +17,7 @@ addBtn.addEventListener('click', function(){
         // var c3 = Math.floor(Math.random()*256);
         var x = Math.random()*90; 
         var y = Math.random()*90;
+        var z = Math.random()*360;
         
         // Get input values
         var textToShow = Math.random() > 0.5 ? nameInput.value : messageInput.value;
@@ -25,6 +26,7 @@ addBtn.addEventListener('click', function(){
         // div.style.color = `rgb(${c1},${c2},${c3})`
          div.style.color = "white"
         div.style.position = 'absolute'
+        div.style.transform = `rotate(${z}deg)`
         div.style.top = y + '%'
         div.style.left = x + '%'
         div.style.fontWeight = 'bold'
